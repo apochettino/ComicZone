@@ -1,0 +1,518 @@
+
+/*-----------------------------------------SCROLL---------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:linear-gradient(21deg, rgba(122,231,184,1) 0%, rgba(118,197,255,1) 49%, rgba(153,27,231,1) 100%);;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+body {
+
+    background-color: #fff;   
+}
+
+
+.header {
+
+    background: url('../../img/bkg01.png') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+
+/* arranca NAVBAR*/
+
+.header .navbar {
+
+    background-color: rgba(0, 0, 0, 0.5) !important;    
+    height: 90px;
+}
+
+/*esto cambia los colores de links*/
+.navbar-dark .navbar-nav .nav-link {
+	
+	color:rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+
+	color: rgba(199, 199, 199, 0.75);
+}
+  
+.fa-heart {
+
+    color: rgb(255, 255, 255);
+    margin: 15px;
+}
+
+.fa-shopping-cart {
+
+    color: rgb(255, 255, 255);
+    margin: 15px;
+}
+
+.fa-user {
+
+    color: rgb(255, 255, 255);
+    margin: 15px;
+}
+
+/*esto posiciona en el centro el logo de la marca*/
+
+.brand   {
+
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+
+/* termina NAVBAR*/
+
+
+/*--Arranca el bloque de img-texto-botón--*/
+
+.float-left {
+
+  padding: 50px 0px 0px 10px;
+}
+
+header h1 {
+
+    color: white;
+    font-family: 'Bangers', cursive;  
+    text-shadow: 2px 3px 20px #000000, 0 0 4px #FFFFFF;
+         
+}
+
+/*recordar hacer un hover... tal vez...*/
+
+/*boton*/
+
+#buttonLight {
+
+    width: 150px;
+    height: auto;
+    color: #000;
+    background-color: #FFCC00;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20pt;
+    font-family: 'Lato';    
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);  
+}
+
+#buttonLight:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/*responsive*/
+
+
+@media (max-width: 576px) {
+
+    #supermanLogoHeader {
+
+        flex: 50%;
+        max-width: 50%;
+        margin: 50px 0px 0px 0px;
+  }
+
+    header h1 {
+        
+        font-size: 34pt;
+        margin: 10px 0px 0px 30px;
+        text-align: center;
+        
+    }
+
+    #buttonLight {
+    
+        margin-top: 30px;        
+    }
+} 
+
+@media (min-width: 576px) {
+
+    #supermanLogoHeader {
+
+    flex: 50%;
+    max-width: 60%;
+    margin: 50px 0px 0px 0px;
+  }
+    
+    header h1 {
+    
+        font-size: 45pt;
+        margin: 10px 0px 0px 30px;
+        text-align: center;
+    }
+    
+    #buttonLight {
+    
+        margin-top:50px;
+    }
+    
+}
+@media (min-width: 768px) {
+
+    #supermanLogoHeader {
+
+        flex: 50%;
+        max-width: 75%;
+        margin: 50px 0px 0px 0px;
+
+      }
+
+    header h1 {
+    
+        font-size: 55pt;
+        margin: 0px 0px 0px 30px;
+        
+    }
+      
+    
+}
+
+@media (min-width: 992px) {
+
+    #supermanLogoHeader {
+
+        flex: 50%;
+        max-width: 85%;
+        margin: 50px 0px 0px 0px;
+
+      }
+
+    header h1 {
+    
+        font-size: 60pt;
+        margin: 0px 0px 0px 30px;
+        
+    }
+      
+    
+}
+
+@media (min-width: 1200px) {
+
+    #supermanLogoHeader {
+
+        flex: 50%;
+        max-width: 110%;
+        margin: 50px 0px 0px 0px;
+
+      }
+
+    header h1 {
+    
+        font-size: 63pt;
+        text-align: center;
+        margin: 0px 0px 0px 30px;
+    }
+      
+    
+}
+
+/*animaciones de texto y de logo*/
+
+#animationHeader01 {
+
+  position: relative;
+  animation-name: animationHeader01;
+  animation-duration: 2s;
+}
+
+@keyframes animationHeader01 {
+  0%   {right: 0px; left: -500px;}
+ 
+  100% {right: 0px; left: 0px;}
+}
+
+#animationHeader02 {
+
+  position: relative;
+  animation-name: animationHeader02;
+  animation-duration: 2s;
+}
+
+@keyframes animationHeader02 {
+  0%   {left:0px; bottom:-500px;}
+ 
+  100% {left:0px; bottom: 0px;}
+}
+
+
+
+
+
+/*Scroll*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  
+}
+section h1 {
+  position: absolute;
+  /*top: 50%*/
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: rgb(252, 0, 0);
+  text-align: center;
+  margin: 100px 0px 0px 0px;
+  
+}
+
+section p  {
+
+    padding: 200px 0px 0px 0px;
+}
+
+
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+  .demo a:hover {
+    opacity: .5;
+}
+  
+
+#section07 a {
+    padding-top: 80px;
+  }
+  #section07 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  #section07 a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  #section07 a span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+  }
+  #section07 a span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+  }
+  @-webkit-keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+    
+
+#newsIndex {
+    
+    height: auto;  
+   
+}
+
+#newsIndex h2 {
+
+    margin: 100px 0px 0px 0px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#newsIndex a {
+
+  color: #000;
+  
+}
+
+hr {
+
+  border: 1px solid red;
+  margin: 0px 0px 50px 0px;
+}
+
+
+
+.card-product .img-wrap {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 410px;
+  text-align: center;
+}
+.card-product .img-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.card-product .info-wrap {
+  overflow: hidden;
+  padding: 15px;
+  border-top: 2px solid rgb(231, 0, 0);
+}
+.card-product  {
+  padding: 25px 0px 0px 0px;
+  border-top: 1px solid #eee;
+}
+
+
+
+#newsIndex h4 {
+
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+
+	margin: 0px;
+}
+
+/*rrss*/
+
+
+
+
+
+
+
+/*nuevo footer*/
+
+.foot01 {
+	background-color: #e9e9e9;
+	
+}
+
+.textFoot{
+	text-align: left;
+	font-size: 12pt;
+	color: rgb(226, 0, 0);
+	font-family: 'Raleway', sans-serif;
+	
+
+}
+.prob01 {
+		justify-content: center;
+	
+	
+}
+.text01 {
+	color: #ff9580;
+	font-family: 'Raleway', sans-serif;
+	font-size: 24pt;
+	text-align: center;
+}
+
+.title {
+	color: #ff9580;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15pt;
+	text-align: center;
+	
+}
+
+#lineapie {
+
+	text-align: center;
+	color: #4b4b4b;
+	font-family: 'Lato', sans-serif;
+	font-size: 12pt;
+}
+
+#tpHidden {
+
+   
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 12pt;
+}
+
