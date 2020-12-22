@@ -28,7 +28,7 @@ body {
 }
 
 
-.header {
+.headerHome {
 
     background: url('../../img/bkg01.png') no-repeat center;
     background-size: cover;
@@ -38,7 +38,7 @@ body {
 
 /* arranca NAVBAR*/
 
-.header .navbar {
+.headerHome .navbar {
 
     background-color: rgba(0, 0, 0, 0.5) !important;    
     height: 90px;
@@ -457,13 +457,97 @@ footer {
 	margin: 0px;
 }
 
-/*rrss*/
+/*----------------------------------ARTICULOS DE SHOP----------------------------------------*/
+
+
+
+
+/* arranca NAVBAR*/
+
+.headerProduct .navbar {
+
+  background-color: rgba(0, 0, 0, 0.8) !important;    
+  height: 90px;
+  
+}
+
+/*esto cambia los colores de links*/
+.navbar-dark .navbar-nav .nav-link {
+
+color:rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+
+color: rgba(199, 199, 199, 0.75);
+}
+
+.fa-heart {
+
+  color: rgb(255, 255, 255);
+  margin: 15px;
+}
+
+.fa-shopping-cart {
+
+  color: rgb(255, 255, 255);
+  margin: 15px;
+}
+
+.fa-user {
+
+  color: rgb(255, 255, 255);
+  margin: 15px;
+}
+
+/*esto posiciona en el centro el logo de la marca*/
+
+.brand   {
+
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  /* 50% of your logo width */
+  display: block;
+}
+
+/* termina NAVBAR*/
+
+#headersk {
+
+  margin: 90px 0px 0px 0px;
+
+}
+
+
+
+#primeraProduct {
+
+  background-color: rgb(177, 177, 177);
+  width: 75%;
+  margin: auto;
+}
+
+
+#primeraProduct h2 {
+
+  margin: 90px 0px 10px 0px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+}
 
 
 
 
 
+/*--------------------------------------------------------------------------*/
 
+
+/*FOOTER*/
+
+footer {
+
+	margin: 0px;
+}
 
 /*nuevo footer*/
 
