@@ -13,7 +13,7 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background:linear-gradient(21deg, rgba(122,231,184,1) 0%, rgba(118,197,255,1) 49%, rgba(153,27,231,1) 100%);;
+    background:linear-gradient(21deg, rgb(185, 0, 0) 0%, rgb(218, 0, 0) 49%);
   }
   
   /* Handle on hover */
@@ -396,7 +396,7 @@ section p  {
 
 #newsIndex a {
 
-  color: #000;
+  color: rgb(212, 59, 59);
   
 }
 
@@ -441,21 +441,6 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-/*FOOTER*/
-
-footer {
-
-	margin: 0px;
-}
 
 /*----------------------------------ARTICULOS DE SHOP----------------------------------------*/
 
