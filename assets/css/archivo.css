@@ -439,8 +439,20 @@ hr {
   font-size: 35px;
 }
 
+/*segunda seccion index*/
 
+#merchIndex {
 
+  height: 1000px;
+}
+
+#merchIndex h2 {
+
+    margin: 100px 0px 0px 0px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 50px;
+}
 
 /*----------------------------------ARTICULOS DE SHOP----------------------------------------*/
 
