@@ -7,6 +7,8 @@ $(function() {
 
 
 
-  // desafío html - dom
+  // intento de carrito
 
   
+
+   

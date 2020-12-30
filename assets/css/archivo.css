@@ -1,7 +1,7 @@
 
 /*-----------------------------------------SCROLL---------------------------------------------*/
 
-/* width */
+/* width */ 
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -597,3 +597,35 @@ footer {
 	font-size: 12pt;
 }
 
+/*shop*/
+
+#leftFilter {
+
+  background-color: aliceblue;
+}
+
+#rightProducts {
+
+  background-color: #fff;
+}
+
+#rightProducts h4 {
+
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 35px;
+}
+
+#rightProducts button {
+
+  margin:  30px 0px 50px 0px;
+  color:#fff;
+  background-color: #FF0000;
+  border-color: #FF0000;
+  border-radius: 7px;
+}
+
+
+
+
+/* revisar backgrounds y espaciados de store!!!*/

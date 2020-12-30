@@ -3,16 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Comic Zone</title>
+
+    <link rel="icon" type="image" href="./../img/favicon.png"/>
+
+    <!-- boostrap CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Mi CSS -->
+
+    <link rel="stylesheet" href="./../assets/css/archivo.css">
+
     
-    <header>
-        <h1>ESTE ES EL ENCABEZADO</h1>
+    <!-- RRSS Footer -->
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Mis tipografías -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/faf39d305a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body>
+
+
+  <header class="headerProduct">
+    
+    <div id="formatoNav">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bkgCustom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Mangas
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">A-F</a>
+                    <a class="dropdown-item" href="#">G-M</a>
+                    <a class="dropdown-item" href="#">N-Z</a>
+                    <a class="dropdown-item" href="#">Por género</a>
+                    <a class="dropdown-item" href="#">Manhwa</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Comics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Merchandising</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>                
+              </ul>     
+              <a class="brand" href="./index.html"><img src="./../img/cz05.png" alt=""></a>         
+              </div>
+              <div>
+                <i class="fas fa-heart"></i>
+
+                <i class="fas fa-shopping-cart"></i>
+
+                <i class="fas fa-user"></i>
+                </div>
+            </div>
+            
+           
+          </nav>
+        </div>
+
+
+
+
+        <div id="headersk"> 
+            <div class="container-fluid">
+                <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <img src="../img/banshop.png" class="d-block w-100" alt="principal">
+                </div>
+                </div>
+            </div>
+        </div>
+           
     </header>
 
 
 
+      
+
+    <section id="primeraProduct"> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="leftFilter">
+                        <div class="titulosarti"><h2>filtros</h2></div>
+                                               
+                        
+                        <br>
+                            <h4>Género</h4> 
+                            <input type="checkbox" name="genero" id="genero"> Shounen
+                            <br>
+                            <input type="checkbox" name="genero" id="genero"> Shounen
+                            <br>
+                            <input type="checkbox" name="genero" id="genero"> Shounen
+                            <br> <br>
+                            <h4>Editorial</h4>
+                            <input type="checkbox" name="genero" id="genero"> IVREA
+                            <br>
+                            <input type="checkbox" name="genero" id="genero"> Panini
+                            <br><br>
+                            <h4>Precio</h4>
+                            y aca va una linea de max y min $ - ver como se hace
+                    </div>
+                </div>
+
+                         
+            
+                    <div class="col-md-9">
+                        <div id="rightProducts">
+                            <div class="titulosarti"><h2>Productos</h2>
+                            </div>
+                            <hr>
+
+                                <div class="container">           
+                                    <div class="row">   
+                                
+                                        <div class="col-md-4">
+                                            <figure class="card card-product">
+                                            <div class="img-wrap"><img src="../img/p01.png"></div>
+                                            <figcaption class="info-wrap">
+                                                <a href="./views/sk01.html"><h4>Shaman King #01</h4></a>            
+                                            </figcaption>          
+                                            </figure>
+                                            <div class="text-center">
+                                                <div>Precio $450</div>
+                                                 <button class="btn btn-outline-dark" type="button">AÑADIR AL CARRITO</button> 
+                                            </div> 
+                                        </div>
+                                        
+                                        
+                                    
+                                        <div class="col-md-4">
+                                            <figure class="card card-product">
+                                            <div class="img-wrap"><img src="../img/p02.png"> </div>
+                                            <figcaption class="info-wrap">            
+                                                <h4>Bleach #01</h4>            
+                                            </figcaption>         
+                                            </figure>
+                                            <div class="text-center">
+                                                <div>Precio $450</div> 
+                                                <button class="btn btn-outline-dark" type="button">AÑADIR AL CARRITO</button> 
+                                           </div> 
+                                        </div> <!-- col // -->
+                                    
+                                        <div class="col-md-4">
+                                            <figure class="card card-product">
+                                            <div class="img-wrap"><img src="../img/p03.png"></div>
+                                            <figcaption class="info-wrap">
+                                                <h4>Jujutsu Kaisen #01</h4>
+                                            </figcaption>         
+                                            </figure>
+                                            <div class="text-center">
+                                                <div>Precio $000</div>
+                                                <button class="btn btn-outline-dark" type="button">AÑADIR AL CARRITO</button> 
+                                           </div> 
+                                        </div> 
+                                        
+                                    </div>     
+                                </div>   
+                                
+                                <div class="container">           
+                                    <div class="row">   
+                                
+                                        <div class="col-md-4">
+                                            <figure class="card card-product">
+                                            <div class="img-wrap"><img src="../img/p01.png"></div>
+                                            <figcaption class="info-wrap">
+                                                <a href="#"><h4>Shaman King #01</h4>   </a>            
+                                            </figcaption>          
+                                            </figure>
+                                            <div class="text-center">
+                                                <button class="btn btn-outline-dark" type="button">AÑADIR AL CARRITO</button> 
+                                           </div> 
+                                        </div> <!-- col // -->
+                                    
+                                        <div class="col-md-4">
+                                            <figure class="card card-product">
+                                            <div class="img-wrap"><img src="../img/p02.png"> </div>
+                                            <figcaption class="info-wrap">            
+                                                <h4>Bleach #01</h4>            
+                                            </figcaption>         
+                                            </figure>
+                                            <div class="text-center">
+                                                <button class="btn btn-outline-dark" type="button">AÑADIR AL CARRITO</button> 
+                                           </div> 
+                                        </div> <!-- col // -->
+                                    
+                                        <div class="col-md-4">
+                                            <figure class="card card-product">
+                                            <div class="img-wrap"><img src="../img/p03.png"></div>
+                                            <figcaption class="info-wrap">
+                                                <h4>Jujutsu Kaisen #01</h4>
+                                            </figcaption>         
+                                            </figure>
+                                            <div class="text-center">
+                                                 <button class="btn btn-outline-dark" type="button">AÑADIR AL CARRITO</button> 
+                                            </div> 
+                                        </div> 
+                                        
+                                    </div>     
+                                </div>  
+                            </div> 
+                        </div> 
+                    </div> 
+                    
+                   
+        
+                </div>
+            </div> 
+          </div>
+        </div>
+    </section>
     
 <!-- Mi JS -->
 
