@@ -11,8 +11,7 @@ addToShoppingCartButtons.forEach(addToCartButton => {
 
 function addToCartClicked(event) {
   const button = event.target;
-  const item = button.closest('item');
- 
-  const itemTitle = item.querySelector('.item.title')
+  const item = button.closest('.item');
+ console.log('addToCartClicked -> item', item);
 
 }
