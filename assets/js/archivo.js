@@ -1,31 +1,18 @@
 // scroll del home
 
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
+
+// intento de carrito n°2.....
+
+const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
+addToShoppingCartButtons.forEach(addToCartButton => {
+
+    addToCartButton.addEventListener('click', addToCartClicked);    
 });
 
+function addToCartClicked(event) {
+  const button = event.target;
+  const item = button.closest('item');
+ 
+  const itemTitle = item.querySelector('.item.title')
 
-
-// intento de carrito
-
-
-document.addEventListener('DOMContentLoaded', () => {
-
-})
-
- const fetchData = async () => {
-
-    try {
-      const res = await fetch('api.json')
-      const data = await res.json()
-      console.log(data)
-    } catch (error) {
-      console.log(error)
-    }
- }
-
-
-   
+}
