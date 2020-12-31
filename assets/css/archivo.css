@@ -625,7 +625,10 @@ footer {
   border-radius: 7px;
 }
 
-
+#rightProducts button:hover {
+  
+  box-shadow: 0 2px 16px 0 rgba(248, 3, 3, 0.24), 0 7px 50px 0 rgba(0,0,0,0.19);
+}
 
 
 /* revisar backgrounds y espaciados de store!!!*/
