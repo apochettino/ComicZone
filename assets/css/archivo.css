@@ -593,9 +593,9 @@ p {
 
 
 .item {
-  border: 1px solid rgb(202, 202, 202);
+  
   padding: 10px;
-  border-radius: 20px;
+  
 }
 
 .item-title {
@@ -605,8 +605,8 @@ p {
 }
 
 .item-image {
-  height: 300px;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 
 .item-details {
