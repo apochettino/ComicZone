@@ -1,5 +1,11 @@
 // scroll del home
 
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
 
 // intento de carrito n°2.....
 
@@ -54,6 +60,10 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
 
    shoppingCartRow.innerHTML = shoppingCartContent
    shoppingCartItemsContainer.append(shoppingCartRow);
+   
+   shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem);
+
+    shoppingCartRow.querySelector('.shoppingCartItemQuantity').addEventListener('change', quantityChanged);
 
    updateShoppingCartTotal()
 }
@@ -80,6 +90,21 @@ function updateShoppingCartTotal(){
      
   });
 
-  shoppingCartTotal.innerHTML = `$ ${total}`;
+  shoppingCartTotal.innerHTML = `$ ${total.toFixed(2)}`; //el tofixed es para los decimales, aunq no tengo en la web
+}
+
+  function removeShoppingCartItem(event) {
+    const buttonClicked = event.target;
+    
+    buttonClicked.closest('.shoppingCartItem').remove();
+
+    updateShoppingCartTotal();
+  
+}
+
+function queatityChanged(event) {
+
+  const input = event.target;
+  console.log('queantityChanged -> input', input);
 
 }
