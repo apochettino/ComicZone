@@ -1,11 +1,11 @@
 // scroll del home
 
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
+//$(function() {
+ // $('a[href*=#]').on('click', function(e) {
+  //  e.preventDefault();
+  //  $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+ // });
+//});
 
 // intento de carrito n°2.....
 
@@ -14,6 +14,9 @@ addToShoppingCartButtons.forEach(addToCartButton => {
 
     addToCartButton.addEventListener('click', addToCartClicked);    
 });
+
+const comprarButton = document.querySelector('.comprarButton');
+comprarButton.addEventListener('click', comprarButtonClicked);
 
 const shoppingCartItemsContainer = document.querySelector('.shoppingCartItemsContainer');
 
@@ -31,6 +34,22 @@ function addToCartClicked(event) {
 }
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
+
+  const elementsTitle = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitle');
+  for (let i = 0; i < elementsTitle.length; i++) {
+      if (elementsTitle[i].innerText === itemTitle) {
+
+         let elementQuantity = elementsTitle[i].parentElement.parentElement.parentElement.querySelector('.shoppingCartItemQuantity');
+
+         elementQuantity.value++;
+         $('.toast').toast('show');
+         updateShoppingCartTotal();
+         return;
+
+      }
+
+  }
+
   const shoppingCartRow = document.createElement('div');
   const shoppingCartContent = `
   <div class="row shoppingCartItem">
@@ -61,9 +80,13 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
    shoppingCartRow.innerHTML = shoppingCartContent
    shoppingCartItemsContainer.append(shoppingCartRow);
    
-   shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem);
+   shoppingCartRow
+    .querySelector('.buttonDelete')
+    .addEventListener('click', removeShoppingCartItem);
 
-    shoppingCartRow.querySelector('.shoppingCartItemQuantity').addEventListener('change', quantityChanged);
+   shoppingCartRow
+    .querySelector('.shoppingCartItemQuantity')
+    .addEventListener('change', quantityChanged);
 
    updateShoppingCartTotal()
 }
@@ -93,18 +116,27 @@ function updateShoppingCartTotal(){
   shoppingCartTotal.innerHTML = `$ ${total.toFixed(2)}`; //el tofixed es para los decimales, aunq no tengo en la web
 }
 
-  function removeShoppingCartItem(event) {
-    const buttonClicked = event.target;
-    
-    buttonClicked.closest('.shoppingCartItem').remove();
-
-    updateShoppingCartTotal();
+function removeShoppingCartItem(event) {
+  const buttonClicked = event.target;
   
+  buttonClicked.closest('.shoppingCartItem').remove();
+
+  updateShoppingCartTotal();
+
 }
 
-function queatityChanged(event) {
+function quantityChanged(event) { 
 
   const input = event.target;
-  console.log('queantityChanged -> input', input);
+  if (input.value <= 0) {
+    input.value = 1;
+  }
+ //se puede pasar a ternario, explicaron en react y quedaría input.valued <= 0 ? (input.value = 1) : null   ---- no aplicar ahora, dejo para react
+  updateShoppingCartTotal();
 
+}
+
+function comprarButtonClicked() {
+  shoppingCartItemsContainer.innerHTML = '';
+  updateShoppingCartTotal();
 }
