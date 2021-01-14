@@ -596,7 +596,7 @@ p {
 /* revisar backgrounds y espaciados de store!!!*/
 
 
-
+/*CARRITO*/
 
 
 .item {
@@ -702,3 +702,46 @@ p {
 	font-family: 'Lato', sans-serif;
 	font-size: 12pt;
 }
+
+
+/*---------------------------------------*/
+
+
+.cartBar {
+
+  margin: 0px 300px 0px 0px;
+  
+}
+
+.cartBar ul li {
+
+  text-decoration: none;
+}
+
+.dropdown-menu {
+
+  overflow: auto;
+  max-height: 430px;
+  width: 400px;
+  
+}
+
+.cartBar h6 {
+
+  font-family: 'Lato';  
+}
+
+.cartBar p {
+  font-family: 'Lato';  
+  font-size: 16px;
+  margin: 15px;
+  font-weight: 600;
+
+}
+
+.shopping-cart-total {
+
+  width: 350px;
+}
+
+
