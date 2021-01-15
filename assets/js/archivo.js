@@ -144,4 +144,23 @@ function comprarButtonClicked() {
 
 /*------------*/
 
+//ajax en boton comprar
 
+console.log('activo');
+
+document.querySelector('#btnAjax').addEventListener('click', traerDatos);
+
+function traerDatos() {
+
+    const xhttp = new XMLHttpRequest(); //instanciar objeto
+
+    xhttp.open('GET', './asd.txt', true);
+
+    xhttp.send();
+
+    xhttp.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText)
+        }
+    }
+}

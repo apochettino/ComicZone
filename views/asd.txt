@@ -1,0 +1,1 @@
+Prueba de ajax para desafío, gracias por realizar tu compra!
