@@ -83,6 +83,12 @@ body {
     display: block;
 }
 
+
+.dropdown-item {
+
+  color: #fff;
+}
+
 /* termina NAVBAR*/
 
 
@@ -101,7 +107,7 @@ header h1 {
          
 }
 
-/*recordar hacer un hover... tal vez...*/
+
 
 /*boton*/
 
@@ -520,7 +526,7 @@ color: rgba(199, 199, 199, 0.75);
 
 #primeraProduct {
 
-  background-color: rgb(248, 226, 226);
+  
   width: 75%;
   margin: auto;
 }
@@ -774,3 +780,77 @@ p {
   color: rgb(231, 2, 2);
 }
 
+/*----------------------------SK 01-----------------------------*/
+
+.descrip h3{
+
+  padding: 200px 0px 30px 0px;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.descrip p {
+
+  text-align: justify;
+  padding: 0;
+}
+
+.descrip button {
+
+  
+  margin:  30px 0px 50px 0px;
+  color:#fff;
+  background-color: #FF0000;
+  border-color: #FF0000;
+  border-radius: 7px;
+ 
+}
+
+.descrip button:hover {
+  
+  box-shadow: 0 2px 16px 0 rgba(248, 3, 3, 0.24), 0 7px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*enlacessssss */
+a:link {
+  color: #fff;
+}
+ 
+a:visited {
+  color: #d6d6d6;
+}
+
+/*enlacessssss */
+a:hover {
+  border-bottom: 0px solid;     
+  color:  #f1f1f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.btn-outline-dark {
+
+  color:#fff;
+  background-color: #FF0000;
+  border-color: #FF0000;
+  border-radius: 7px;
+}
+
+
+.btn-outline-dark:hover {
+
+   
+  box-shadow: 0 2px 16px 0 rgba(248, 3, 3, 0.24), 0 7px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+#caroulseVer {
+
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 50px;
+  margin:  30px 0px 50px 0px;
+}
